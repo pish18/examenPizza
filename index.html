@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>EXAMEN</title>
+
+	<script src="../libraries/p5.js"></script>
+	<script src="../libraries/p5.dom.js"></script>
+	<script src="../libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<!-- <script src="pruebas.js"></script> -->
+	
+<head>
+	<header class="center-title">
+		<h1 class="header-title">
+		ALGORITMO PUNTO PENDIENTE, DDA Y BRESENHAM
+		</h1>
+	</header>
+</head>
+<body>
+	<div class="center-title">
+		<h2>¿EN CUANTOS TROZOS DESEAS PARTIR LA PIZZA?</h2>
+		<input name="piezas" type="number" id="piezas">
+		<button id="part" onclick="dividePizza();">PARTIR PIZZA</button>
+	</div>	
+	<div class="algorithm-title">
+		<h3>PUNTO PENDIENTE</h3>
+		<h3>DDA</h3>	
+		<h3>BRESENHAM</h3>	
+	</div>
+</body>
+<style>
+	body {
+  		margin:0 0 0 0;
+		padding:0 0 0 0;
+		overflow: hidden;
+		background-color:rgba(228, 179, 89, 0.856);
+	}
+	header{
+		background-color:rgb(143, 105, 1);
+		padding-bottom: 30px;
+	}
+	.center-title{text-align: center;}
+	.header-title{
+		margin: 0 0 0 0;
+		color: whitesmoke;
+	}
+	.algorithm-title{
+		display: flex;
+		flex-direction: row;
+	}
+	h3{
+		margin-left:18%;
+		padding: 10px;
+		background-color: yellow;
+	}
+	canvas {margin: auto;}
+	
+</style>
+</html>
